@@ -10,6 +10,11 @@ PRODUCT_LOCALES += hdpi
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/baffinlite/overlay
 
+#Prebuilt Kernel
+TARGET_PREBUILT_KERNEL := device/samsung/baffinlite/zImage
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
+
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/baffinlite/init.java_ss_baffinlite.rc:root/init.java_ss_baffinlite.rc \

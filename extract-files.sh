@@ -3,7 +3,7 @@
 VENDOR=samsung
 DEVICE=baffinlite
 
-BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
+BASE=../../vendor/$VENDOR/$DEVICE/proprietary
 
 echo "Pulling device files..."
 for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
